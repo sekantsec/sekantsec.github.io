@@ -1,0 +1,23 @@
+---
+---
+
+@import "minima"; // This loads all the default styles
+
+// Now add your overrides BELOW this line
+body {
+  background-color: #f9f9f9;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-color: #ddd;
+}
+
+
+hr {
+  margin-top: 1rem;   // adjust as needed
+  margin-bottom: 2rem;
+  border: none;
+  border-top: 1px solid #ccc;  // optional: to match design
+}
