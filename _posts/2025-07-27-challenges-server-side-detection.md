@@ -2,7 +2,7 @@
 layout: post
 title:  "Why Server-Side Website Validation Falls Short"
 excerpt: Overview of server-side detection and how phishers evade it
-date:   2025-07-27 10:35:00 +0530
+date:   2025-07-28 10:35:00 +0530
 tags: challenges server-side detection
 published: false
 ---

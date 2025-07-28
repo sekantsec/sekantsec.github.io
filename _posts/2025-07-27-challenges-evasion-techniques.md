@@ -2,7 +2,7 @@
 layout: post
 title:  "How Phishers Bypass Traditional Security Measures"
 excerpt: Comprehensive list of tactics used by sophisticated phishers to evade detection
-date:   2025-07-27 10:34:00 +0530
+date:   2025-07-28 10:34:00 +0530
 tags: challenges detection advanced-techniques
 published: false
 ---

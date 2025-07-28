@@ -2,7 +2,7 @@
 layout: post
 title:  "Limitations of Blocklist-Based Phishing Protection"
 excerpt: Overview of how blocklists work and where they fall short in protection
-date:   2025-07-27 10:36:00 +0530
+date:   2025-07-28 10:36:00 +0530
 tags: challenges blocklist detection
 published: false
 ---

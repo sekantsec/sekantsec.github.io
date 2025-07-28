@@ -2,7 +2,7 @@
 layout: post
 title:  "Why Phishing Is Painful for Consumers (2025)"
 excerpt: Statistics related to the impact of phishing on consumers
-date:   2025-07-27 10:33:00 +0530
+date:   2025-07-28 10:33:00 +0530
 tags: phishing impact consumers
 published: false
 ---
