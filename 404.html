@@ -1,25 +1,35 @@
----
-permalink: /404.html
-layout: page
----
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sekant - URL Security Analysis</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect
+      var pathSegmentsToKeep = 1; // For repository name in GitHub Pages
+      
+      var l = window.location;
+      var segments = l.pathname.split('/').slice(1); // Remove empty first segment
+      
+      // If this is a GitHub Pages repo (not a custom domain), adjust for repo name
+      if (l.hostname.includes('github.io') && segments.length > 0) {
+        pathSegmentsToKeep = 1; // Keep the repository name segment
+      } else {
+        pathSegmentsToKeep = 0; // Custom domain or local development
+      }
+      
+      var redirectPath = segments.slice(pathSegmentsToKeep).join('/');
+      
+      if (redirectPath) {
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/' + segments.slice(0, pathSegmentsToKeep).join('/') + 
+          (pathSegmentsToKeep > 0 ? '/' : '') + '?/' + redirectPath +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
