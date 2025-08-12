@@ -60,4 +60,4 @@ minima:
 #   - vendor/ruby/
 
 include:
-  - ".well-known/pki-validation"
+  - ".well-known"
