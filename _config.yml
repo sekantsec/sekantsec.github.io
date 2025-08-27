@@ -40,7 +40,7 @@ minima:
   include_seo: true
 
 # Google Analytics
-google_analytics: G-MWPHCLCS97
+# google_analytics: G-MWPHCLCS97
 
 # Exclude from processing.
 # The following items will not be processed, by default.
