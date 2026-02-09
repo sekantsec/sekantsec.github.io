@@ -2,12 +2,14 @@
 layout: post
 title:  "How Phishers Bypass Traditional Security Measures"
 excerpt: Comprehensive list of tactics used by sophisticated phishers to evade detection
-date:   2025-07-28 10:34:00 +0530
+date:   2026-02-15 10:34:00 +0530
 tags: challenges detection advanced-techniques
-published: false
+published: true
 ---
 
-Here’s a comprehensive list of **tactics phishers use to circumvent server-side validation**, along with sources and further reading where available. These techniques are specifically designed to **evade automated scanners, threat intelligence systems, and sandbox environments** used by security vendors or enterprise gateways.
+![Sophisticated Phishing Tactics](/assets/images/steal-data-concept.jpg)
+
+We have catalogued a list of **tactics phishers use to circumvent server-side validation**, along with sources and further reading where available. These techniques are specifically designed to **evade automated scanners, threat intelligence systems, and sandbox environments** used by security vendors or enterprise gateways.
 
 ---
 
