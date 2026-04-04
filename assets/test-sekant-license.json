@@ -1,0 +1,31 @@
+{
+  "payload": {
+    "enablePhishingDetector": false,
+    "actionOnUnfamiliarSiteMatch": "nothing",
+    "actionOnSuspiciousPhishingMatch": "nothing",
+    "actionOnUnsafePhishingMatch": "nothing",
+    "enableClickFixScanner": true,
+    "actionOnClickFixMatch": "nothing",
+    "enableClipboardCopyScanner": false,
+    "clipboardCopyScanRules": "",
+    "actionOnClipboardCopyScanMatch": "nothing",
+    "enableShadowAIDetector": false,
+    "enableNewAISiteDetector": false,
+    "actionOnShadowAIPrompt": "nothing",
+    "actionOnShadowAIPaste": "nothing",
+    "actionOnShadowAIFileUpload": "nothing",
+    "enableClipboardPasteScanner": false,
+    "clipboardPasteScanRules": "",
+    "actionOnClipboardPasteScanMatch": "nothing",
+    "enableDownloadScanner": false,
+    "downloadScanRules": "",
+    "actionOnDownloadScanMatch": "report",
+    "actionOnAnyDownload": "report",
+    "actionOnAnyUpload": "nothing",
+    "expiryDate": "2026-04-08T13:58:45.371Z",
+    "trial": false,
+    "loggingUrl": "https://example.com/logging",
+    "userCount": 42
+  },
+  "signature": "0mux/TjBgZKiZjsck4ukHXe6kdy3xSa2b9YLG0LmJTulCV1y+V4z6fvDB30ZoAvdkVHQ5zkHnjE+CvMlGl0gU07g1czV4y86i5Ycak78exSkv+Cv7tNbhVQLNkJ3HtUjn9oLCcPL8hUQNkODCk50U/E0uxBHwpej3V6EJumSejMOMQva4dBdhLjYBqOQzwNsPJPlw+y1OgjUwkl4O67gnAM2zkCFNPobChAJA36cDo5p+ab+VAbbDM1TWo0s5XxA15ymTLwX+PX/A4WROAa10Yuf/rOq1pxCTe/orPvy8OtR2Xyhif+AH/iIcqRbXP9eD+YJA+cpKx5s7vFzc8dGMQ=="
+}
