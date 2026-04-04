@@ -1,9 +1,9 @@
 {
   "payload": {
-    "enablePhishingDetector": false,
-    "actionOnUnfamiliarSiteMatch": "nothing",
-    "actionOnSuspiciousPhishingMatch": "nothing",
-    "actionOnUnsafePhishingMatch": "nothing",
+    "enablePhishingDetector": true,
+    "actionOnUnfamiliarSiteMatch": "report",
+    "actionOnSuspiciousPhishingMatch": "report",
+    "actionOnUnsafePhishingMatch": "report",
     "enableClickFixScanner": true,
     "actionOnClickFixMatch": "nothing",
     "enableClipboardCopyScanner": false,
@@ -19,13 +19,13 @@
     "actionOnClipboardPasteScanMatch": "nothing",
     "enableDownloadScanner": false,
     "downloadScanRules": "",
-    "actionOnDownloadScanMatch": "report",
-    "actionOnAnyDownload": "report",
+    "actionOnDownloadScanMatch": "nothing",
+    "actionOnAnyDownload": "nothing",
     "actionOnAnyUpload": "nothing",
-    "expiryDate": "2026-04-08T13:58:45.371Z",
+    "expiryDate": "2026-08-01T00:00:00.000Z",
     "trial": false,
-    "loggingUrl": "https://example.com/logging",
-    "userCount": 42
+    "loggingUrl": "http://localhost:8787/api/events",
+    "userCount": 50
   },
-  "signature": "0mux/TjBgZKiZjsck4ukHXe6kdy3xSa2b9YLG0LmJTulCV1y+V4z6fvDB30ZoAvdkVHQ5zkHnjE+CvMlGl0gU07g1czV4y86i5Ycak78exSkv+Cv7tNbhVQLNkJ3HtUjn9oLCcPL8hUQNkODCk50U/E0uxBHwpej3V6EJumSejMOMQva4dBdhLjYBqOQzwNsPJPlw+y1OgjUwkl4O67gnAM2zkCFNPobChAJA36cDo5p+ab+VAbbDM1TWo0s5XxA15ymTLwX+PX/A4WROAa10Yuf/rOq1pxCTe/orPvy8OtR2Xyhif+AH/iIcqRbXP9eD+YJA+cpKx5s7vFzc8dGMQ=="
+  "signature": "rW2mYVVy5AciESOyvGe1XhUrw+A/POAJ+tE/QAmZ9uqavuMLPU5e+uwqV+nWVXPpNy7nc1dmoUn2MvJzHbP+d4nANMtqOrFwwFQeWDtPFm0dwXqDhF7559JabCUuWhbCSpRAcETIbC1awg1+ak+GmymBfqIvHKW5cWO/y1cGVVcpC9wQj/TNEMAPrdW/eU8VtE8uaaM3wipziLsl+te33B3R0SuwjXyiYJXgqgBsRg/ZPctBT+VMv7Cv1bU/aNvJ0rPvZLidKBrlQ6C83a5aaFannM0ttXBRJt97a9FMdYoiLo+Gem/1D8croS/DtKsRSTw1LVZhgBmNGLKvEoI7HA=="
 }
