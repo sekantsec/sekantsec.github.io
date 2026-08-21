@@ -1,0 +1,869 @@
+/* ant-bulma.css
+ *
+ * Ant Design-inspired theme for Bulma.
+ * Load AFTER bulma.min.css.
+ */
+
+:root {
+  /* -----------------------------
+     Color tokens
+     ----------------------------- */
+
+  --ant-primary: #1677ff;
+  --ant-primary-hover: #4096ff;
+  --ant-primary-active: #0958d9;
+
+  --ant-text: rgba(0, 0, 0, 0.88);
+  --ant-text-secondary: rgba(0, 0, 0, 0.65);
+  --ant-text-tertiary: rgba(0, 0, 0, 0.45);
+  --ant-text-disabled: rgba(0, 0, 0, 0.25);
+
+  --ant-border: #d9d9d9;
+  --ant-border-light: #f0f0f0;
+
+  --ant-bg: #fff;
+  --ant-bg-subtle: #fafafa;
+
+  --ant-success: #52c41a;
+  --ant-warning: #faad14;
+  --ant-error: #ff4d4f;
+  --ant-info: #1677ff;
+
+  /* -----------------------------
+     Geometry
+     ----------------------------- */
+
+  --ant-radius: 6px;
+  --ant-radius-sm: 4px;
+  --ant-radius-lg: 8px;
+
+  /* -----------------------------
+     Shadows
+     ----------------------------- */
+
+  --ant-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.08),
+    0 3px 6px rgba(0, 0, 0, 0.04);
+
+  --ant-shadow-sm:
+    0 2px 8px rgba(0, 0, 0, 0.06);
+
+  /* -----------------------------
+     Typography
+     ----------------------------- */
+
+  --ant-font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  --ant-font-size: 14px;
+
+  /* -----------------------------
+     Controls
+     ----------------------------- */
+
+  --ant-control-height: 32px;
+}
+
+
+/* =========================================================
+   Base
+   ========================================================= */
+
+html,
+body {
+  font-family: var(--ant-font-family);
+  font-size: var(--ant-font-size);
+  color: var(--ant-text);
+  background: var(--ant-bg);
+}
+
+body {
+  line-height: 1.5715;
+}
+
+.title,
+.subtitle,
+.label,
+.button,
+.input,
+.textarea,
+.select select,
+.table {
+  font-family: var(--ant-font-family);
+}
+
+
+/* =========================================================
+   Typography
+   ========================================================= */
+
+.title {
+  color: var(--ant-text);
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--ant-text-secondary);
+}
+
+.content {
+  color: var(--ant-text);
+}
+
+.help {
+  color: var(--ant-text-tertiary);
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+a {
+  color: var(--ant-primary);
+}
+
+a:hover {
+  color: var(--ant-primary-hover);
+}
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.button {
+  min-height: 32px;
+  height: 32px;
+
+  padding: 4px 15px;
+
+  border-radius: var(--ant-radius);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  border-color: var(--ant-border);
+
+  box-shadow: none;
+
+  transition:
+    color 0.2s,
+    background-color 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.button:hover {
+  border-color: var(--ant-primary-hover);
+  color: var(--ant-primary);
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px rgba(22, 119, 255, 0.15);
+}
+
+.button.is-primary {
+  color: #fff;
+  background: var(--ant-primary);
+  border-color: var(--ant-primary);
+}
+
+.button.is-primary:hover {
+  color: #fff;
+  background: var(--ant-primary-hover);
+  border-color: var(--ant-primary-hover);
+}
+
+.button.is-primary:active {
+  background: var(--ant-primary-active);
+  border-color: var(--ant-primary-active);
+}
+
+.button.is-light {
+  background: #fff;
+  border-color: var(--ant-border);
+  color: var(--ant-text);
+}
+
+.button.is-light:hover {
+  color: var(--ant-primary);
+  border-color: var(--ant-primary-hover);
+  background: #fff;
+}
+
+.button.is-danger {
+  background: var(--ant-error);
+  border-color: var(--ant-error);
+  color: #fff;
+}
+
+.button.is-success {
+  background: var(--ant-success);
+  border-color: var(--ant-success);
+  color: #fff;
+}
+
+.button.is-warning {
+  background: var(--ant-warning);
+  border-color: var(--ant-warning);
+  color: #fff;
+}
+
+/* Sizes */
+
+.button.is-small {
+  height: 24px;
+  min-height: 24px;
+  padding: 0 7px;
+  font-size: 14px;
+}
+
+.button.is-medium {
+  height: 40px;
+  min-height: 40px;
+}
+
+.button.is-large {
+  height: 48px;
+  min-height: 48px;
+}
+
+
+/* =========================================================
+   Inputs / Forms
+   ========================================================= */
+
+.label {
+  color: var(--ant-text);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input,
+.textarea,
+.select select {
+  color: var(--ant-text);
+  background: #fff;
+
+  border: 1px solid var(--ant-border);
+  border-radius: var(--ant-radius);
+
+  box-shadow: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--ant-text-tertiary);
+}
+
+.input:hover,
+.textarea:hover,
+.select select:hover {
+  border-color: var(--ant-primary-hover);
+}
+
+.input:focus,
+.textarea:focus,
+.select select:focus {
+  border-color: var(--ant-primary);
+
+  box-shadow:
+    0 0 0 2px rgba(22, 119, 255, 0.15);
+}
+
+.input.is-danger,
+.textarea.is-danger,
+.select.is-danger select {
+  border-color: var(--ant-error);
+}
+
+.input.is-danger:focus,
+.textarea.is-danger:focus,
+.select.is-danger select:focus {
+  box-shadow:
+    0 0 0 2px rgba(255, 77, 79, 0.15);
+}
+
+.input.is-success,
+.textarea.is-success,
+.select.is-success select {
+  border-color: var(--ant-success);
+}
+
+.help.is-danger {
+  color: var(--ant-error);
+}
+
+.help.is-success {
+  color: var(--ant-success);
+}
+
+
+/* =========================================================
+   Checkboxes / Radios
+   ========================================================= */
+
+.checkbox,
+.radio {
+  color: var(--ant-text);
+}
+
+.checkbox:hover,
+.radio:hover {
+  color: var(--ant-primary);
+}
+
+
+/* =========================================================
+   Cards
+   ========================================================= */
+
+.card {
+  background: #fff;
+
+  border: 1px solid var(--ant-border-light);
+  border-radius: var(--ant-radius);
+
+  box-shadow: var(--ant-shadow-sm);
+
+  overflow: hidden;
+}
+
+.card-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--ant-border-light);
+}
+
+.card-header-title {
+  color: var(--ant-text);
+  font-weight: 600;
+}
+
+.card-footer {
+  border-top: 1px solid var(--ant-border-light);
+}
+
+
+/* =========================================================
+   Panels
+   ========================================================= */
+
+.panel {
+  border-radius: var(--ant-radius);
+  box-shadow: var(--ant-shadow-sm);
+}
+
+.panel-heading {
+  background: var(--ant-bg-subtle);
+  color: var(--ant-text);
+  font-weight: 600;
+  border-bottom: 1px solid var(--ant-border-light);
+}
+
+.panel-block {
+  border-color: var(--ant-border-light);
+}
+
+
+/* =========================================================
+   Tables
+   ========================================================= */
+
+.table {
+  color: var(--ant-text);
+  font-size: 14px;
+  background: #fff;
+}
+
+.table thead th {
+  background: var(--ant-bg-subtle);
+  color: var(--ant-text);
+  font-weight: 600;
+  border-color: var(--ant-border-light);
+}
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  border-color: var(--ant-border-light);
+}
+
+.table tbody tr:hover {
+  background: #fafafa;
+}
+
+
+/* =========================================================
+   Tags
+   ========================================================= */
+
+.tag {
+  height: 24px;
+
+  padding: 0 7px;
+
+  border-radius: var(--ant-radius-sm);
+
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.tag.is-primary {
+  background: #e6f4ff;
+  color: #0958d9;
+}
+
+.tag.is-success {
+  background: #f6ffed;
+  color: #389e0d;
+}
+
+.tag.is-warning {
+  background: #fffbe6;
+  color: #d48806;
+}
+
+.tag.is-danger {
+  background: #fff2f0;
+  color: #cf1322;
+}
+
+.tag.is-info {
+  background: #e6f4ff;
+  color: #0958d9;
+}
+
+
+/* =========================================================
+   Notifications
+   ========================================================= */
+
+.notification {
+  border-radius: var(--ant-radius);
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.notification.is-primary,
+.notification.is-info {
+  background: #e6f4ff;
+  border-color: #91caff;
+  color: #0958d9;
+}
+
+.notification.is-success {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+  color: #389e0d;
+}
+
+.notification.is-warning {
+  background: #fffbe6;
+  border-color: #ffe58f;
+  color: #d48806;
+}
+
+.notification.is-danger {
+  background: #fff2f0;
+  border-color: #ffccc7;
+  color: #cf1322;
+}
+
+
+/* =========================================================
+   Breadcrumbs
+   ========================================================= */
+
+.breadcrumb {
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: var(--ant-text-secondary);
+}
+
+.breadcrumb a:hover {
+  color: var(--ant-primary);
+}
+
+.breadcrumb li.is-active a {
+  color: var(--ant-text);
+}
+
+
+/* =========================================================
+   Pagination
+   ========================================================= */
+
+.pagination-link,
+.pagination-next,
+.pagination-previous {
+  min-width: 32px;
+  height: 32px;
+
+  border-color: var(--ant-border);
+  border-radius: var(--ant-radius);
+
+  color: var(--ant-text);
+
+  font-size: 14px;
+}
+
+.pagination-link:hover,
+.pagination-next:hover,
+.pagination-previous:hover {
+  border-color: var(--ant-primary);
+  color: var(--ant-primary);
+}
+
+.pagination-link.is-current {
+  background: var(--ant-primary);
+  border-color: var(--ant-primary);
+}
+
+
+/* =========================================================
+   Tabs
+   ========================================================= */
+
+.tabs a {
+  color: var(--ant-text-secondary);
+  border-bottom-color: transparent;
+}
+
+.tabs a:hover {
+  color: var(--ant-primary);
+  border-bottom-color: var(--ant-primary);
+}
+
+.tabs li.is-active a {
+  color: var(--ant-primary);
+  border-bottom-color: var(--ant-primary);
+}
+
+
+/* =========================================================
+   Navbar
+   ========================================================= */
+
+.navbar {
+  background: #fff;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-item,
+.navbar-link {
+  color: var(--ant-text);
+}
+
+.navbar-item:hover,
+.navbar-link:hover {
+  background: #f5f5f5;
+  color: var(--ant-text);
+}
+
+.navbar-item.is-active,
+.navbar-link.is-active {
+  color: var(--ant-primary);
+}
+
+
+/* =========================================================
+   Menu
+   ========================================================= */
+
+.menu-label {
+  color: var(--ant-text-tertiary);
+  font-size: 12px;
+}
+
+.menu-list a {
+  color: var(--ant-text);
+  border-radius: var(--ant-radius-sm);
+}
+
+.menu-list a:hover {
+  background: #f5f5f5;
+  color: var(--ant-text);
+}
+
+.menu-list a.is-active {
+  background: #e6f4ff;
+  color: var(--ant-primary);
+}
+
+
+/* =========================================================
+   Modal
+   ========================================================= */
+
+.modal-card {
+  border-radius: var(--ant-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--ant-shadow);
+}
+
+.modal-card-head,
+.modal-card-foot {
+  background: #fff;
+  border-color: var(--ant-border-light);
+}
+
+.modal-card-title {
+  color: var(--ant-text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   Dropdown
+   ========================================================= */
+
+.dropdown-content {
+  padding: 4px 0;
+
+  border-radius: var(--ant-radius);
+
+  box-shadow: var(--ant-shadow);
+
+  border: 1px solid var(--ant-border-light);
+}
+
+.dropdown-item {
+  color: var(--ant-text);
+  padding: 5px 12px;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+  color: var(--ant-text);
+}
+
+
+/* =========================================================
+   Progress
+   ========================================================= */
+
+.progress {
+  border-radius: 100px;
+  background: #f5f5f5;
+}
+
+.progress::-webkit-progress-bar {
+  background: #f5f5f5;
+  border-radius: 100px;
+}
+
+.progress::-webkit-progress-value {
+  background: var(--ant-primary);
+  border-radius: 100px;
+}
+
+.progress::-moz-progress-bar {
+  background: var(--ant-primary);
+  border-radius: 100px;
+}
+
+
+/* =========================================================
+   Message-like helpers
+   ========================================================= */
+
+.ant-like {
+  border-radius: var(--ant-radius);
+  border: 1px solid var(--ant-border-light);
+  background: #fff;
+  box-shadow: var(--ant-shadow-sm);
+}
+
+.ant-like-primary {
+  color: #0958d9;
+  background: #e6f4ff;
+  border-color: #91caff;
+}
+
+.ant-like-success {
+  color: #389e0d;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.ant-like-warning {
+  color: #d48806;
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+
+.ant-like-error {
+  color: #cf1322;
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+
+/* =========================================================
+   Bulma color cleanup
+   ========================================================= */
+
+.has-text-primary {
+  color: var(--ant-primary) !important;
+}
+
+.has-background-primary {
+  background-color: var(--ant-primary) !important;
+}
+
+.has-text-danger {
+  color: var(--ant-error) !important;
+}
+
+.has-text-success {
+  color: var(--ant-success) !important;
+}
+
+.has-text-warning {
+  color: #d48806 !important;
+}
+
+
+/* =========================================================
+   Dark mode
+   Mirrors Bulma's automatic dark mode: flips the Ant tokens and
+   re-maps the hardcoded light surfaces when the system requests
+   a dark color scheme. To force dark on a page, Bulma's own
+   [data-theme=dark] / .theme-dark handles Bulma components; this
+   block covers the Ant-inspired overrides for auto detection.
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ant-primary: #1668dc;
+    --ant-primary-hover: #3c89e8;
+    --ant-primary-active: #1668dc;
+
+    --ant-text: rgba(255, 255, 255, 0.85);
+    --ant-text-secondary: rgba(255, 255, 255, 0.65);
+    --ant-text-tertiary: rgba(255, 255, 255, 0.45);
+    --ant-text-disabled: rgba(255, 255, 255, 0.25);
+
+    --ant-border: #424242;
+    --ant-border-light: #303030;
+
+    --ant-bg: #141414;
+    --ant-bg-subtle: #1d1d1d;
+
+    --ant-success: #49aa19;
+    --ant-warning: #d89614;
+    --ant-error: #dc4446;
+    --ant-info: #1668dc;
+
+    --ant-shadow:
+      0 6px 16px rgba(0, 0, 0, 0.48),
+      0 3px 6px rgba(0, 0, 0, 0.4);
+    --ant-shadow-sm:
+      0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  /* Surfaces that were hardcoded light in the light theme. */
+  .input,
+  .textarea,
+  .select select {
+    background: var(--ant-bg-subtle);
+  }
+
+  .card {
+    background: var(--ant-bg);
+  }
+
+  .table {
+    background: var(--ant-bg);
+  }
+
+  .table tbody tr:hover {
+    background: var(--ant-bg-subtle);
+  }
+
+  .button.is-light {
+    background: var(--ant-bg);
+  }
+
+  .button.is-light:hover {
+    background: var(--ant-bg);
+  }
+
+  .navbar {
+    background: var(--ant-bg);
+  }
+
+  .navbar-item:hover,
+  .navbar-link:hover,
+  .menu-list a:hover,
+  .dropdown-item:hover {
+    background: var(--ant-bg-subtle);
+  }
+
+  .modal-card-head,
+  .modal-card-foot {
+    background: var(--ant-bg);
+  }
+
+  .progress,
+  .progress::-webkit-progress-bar {
+    background: var(--ant-bg-subtle);
+  }
+
+  .ant-like {
+    background: var(--ant-bg);
+  }
+
+  /* Tags / notifications / highlight helpers (Ant dark palette). */
+  .tag.is-primary,
+  .tag.is-info,
+  .notification.is-primary,
+  .notification.is-info,
+  .menu-list a.is-active,
+  .ant-like-primary {
+    background: #111a2c;
+    border-color: #15325b;
+    color: #4096ff;
+  }
+
+  .tag.is-success,
+  .notification.is-success,
+  .ant-like-success {
+    background: #162312;
+    border-color: #274916;
+    color: #49aa19;
+  }
+
+  .tag.is-warning,
+  .notification.is-warning,
+  .ant-like-warning {
+    background: #2b2111;
+    border-color: #594214;
+    color: #d89614;
+  }
+
+  .tag.is-danger,
+  .notification.is-danger,
+  .ant-like-error {
+    background: #2a1215;
+    border-color: #58181c;
+    color: #dc4446;
+  }
+}

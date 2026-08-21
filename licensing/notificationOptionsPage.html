@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notification Options</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="./ant-bulma.css" />
+    <style>
+      /* Card header wraps on narrow cards (Bulma .level does not). */
+      .card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      /* Disabled-card dimming. */
+      .box.is-disabled {
+        opacity: 0.55;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="module" src="./notificationOptions.bundle.mjs"></script>
+  </body>
+</html>
