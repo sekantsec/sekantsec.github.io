@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Force dark mode: opt out of OS/browser light-mode auto-switching -->
+    <meta name="color-scheme" content="dark" />
 
     <!-- Social media tags -->
     <meta property="og:title" content="Sekant Security : Anti-phishing solutions" />
@@ -38,6 +40,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
     <style>
       :root {
+        color-scheme: dark;
         --bulma-family-primary: "Inter";
         --bulma-block-spacing: "1rem";
       }
@@ -46,12 +49,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-      }
-      @media (max-width: 768px) {
-        .container {
-          padding-left: 1.25rem;
-          padding-right: 1.25rem;
-        }
       }
     </style>
 
@@ -90,7 +87,7 @@
     <div class="block container mt-3">
       <div class="block content">
         <p class="title is-3">Privacy Policy for Sekant Web Security</p>
-        <p class="subtitle is-4">Effective Date: 16 April 2025</p>
+        <p class="subtitle is-4">Effective Date: 23 September 2026</p>
 
         <p>
             Your privacy matters to us. This Privacy Policy explains how Sekant Web Security handles your information when you use our browser extension.
@@ -99,33 +96,46 @@
 
       <div class="box content mt-3">
         <p class="block">
-            <b>What Data We Collect</b><br/>
-            Sekant Web Security does not collect, store, or transmit any personal information or browsing data to our servers or any third parties.
-        </p>
-        <p class="block">
-            <b>We do not:</b>
+            <b>Managed vs Unmanaged Mode</b><br/>
+            Sekant Web Security can operate either in Unmanaged Mode (for Consumers) or Managed Mode (for Organizations). 
             <ul>
-                <li> Collect personal or identifiable information </li>
-                <li> Store data on remote servers </li>
-                <li> Share any information with advertisers or analytics services </li>
+              <li><b>Unmanaged Mode (Consumers):</b> Installed by individual user. Operates solely under the user's control. Free to use. </li>
+              <li><b>Managed Mode (Organizations):</b> Installed and configured by an organization to enforce security policies. Paid subscription. </li>
             </ul>
         </p>
+        <hr/>
+
         <p class="block">
-            <b>How Sekant Web Security Works</b><br/>
-            Sekant Web Security operates entirely within your browser. All analysis and detection processes are performed locally on your device. Your data and browsing activity never leave your computer.
+            <b>What Data We Handle / Transmit</b><br/>
+            Sekant Web Security analyzes web content, clipboard content, and user interactions locally on your device to detect security risks. We do not share any information with advertisers or data brokers, nor do we process data for personalized advertising or other analytic purposes. The only third-party operational services used are external DNS (e.g., Cloudflare, Quad9) and WHOIS lookup APIs.
+            <ul>
+              <li><b>Unmanaged Mode (Consumers):</b> Data is not transmitted to remote servers. </li>
+              <li><b>Managed Mode (Organizations):</b> Data may be transmitted to the organization's servers for security policy enforcement. </li>
+            </ul>
         </p>
-        <p class="block">
-            <b>Local Storage</b><br/>
-            The extension may store basic configuration settings (such as user preferences) locally in your browser. This data is used solely to customize your experience and is never transmitted externally.
-        </p>
-        <p class="block">
-            <b>Third-Party Services</b><br/>
-            Sekant Web Security does not use any third-party tracking, analytics, or advertising services.
-        </p>
+        <hr/>
+
         <p class="block">
             <b>User Control</b><br/>
-            You can uninstall or disable Sekant Web Security at any time through your browser’s extension settings.
+            <ul>
+              <li><b>Unmanaged Mode (Consumers):</b> Users have full control over the extension, and can uninstall or disable at any time. </li>
+              <li><b>Managed Mode (Organizations):</b> Control is determined by the organization's policies.</li>
+            </ul>
         </p>
+        <hr/>
+
+        <p class="block">
+            <b>Local Storage</b><br/>
+            The extension stores configuration settings and personalization information locally in your browser. This data is used to customize your experience.
+        </p>
+        <hr/>
+
+        <p class="block">
+            <b>Third-Party Services</b><br/>
+            Sekant Web Security does not use any third-party tracking, analytics, or advertising services. Only DNS (Cloudflare, Quad9) and WHOIS lookup services are utilized.
+        </p>
+        <hr/>
+
         <p class="block">
             <b>Contact Us</b><br/>
             If you have any questions or concerns about this privacy policy, please contact us at: support@sekantsecurity.com
@@ -134,39 +144,3 @@
     </div>
   </body>
 </html>
-
-<!--
-
-Privacy Policy for Sekant Web Security
-Effective Date: 16 April 2025
-
-Your privacy matters to us. This Privacy Policy explains how Sekant Web Security handles your information when you use our browser extension.
-
-What Data We Collect
-Sekant Web Security does not collect, store, or transmit any personal information or browsing data to our servers or any third parties.
-
-We do not:
-
-<ul>
-    <li> Transmit your browsing activity </li>
-    <li> Collect personal or identifiable information </li>
-    <li> Store data on remote servers </li>
-    <li> Share any information with advertisers or analytics services </li>
-</ul>
-
-How Sekant Web Security Works
-Sekant Web Security operates entirely within your browser. All analysis and detection processes are performed locally on your device. Your data and browsing activity never leave your computer.
-
-Local Storage
-The extension may store basic configuration settings (such as user preferences) locally in your browser. This data is used solely to customize your experience and is never transmitted externally.
-
-Third-Party Services
-Sekant Web Security does not use any third-party tracking, analytics, or advertising services.
-
-User Control
-You can uninstall or disable Sekant Web Security at any time through your browser’s extension settings.
-
-Contact Us
-If you have any questions or concerns about this privacy policy, please contact us at: support@sekantsecurity.com
-
--->

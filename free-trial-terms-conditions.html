@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Force dark mode: opt out of OS/browser light-mode auto-switching -->
+    <meta name="color-scheme" content="dark" />
 
     <title>Sekant Security : Free Trial Terms & Conditions</title>
     <link rel="icon" type="image/x-icon" href="icon128.png" />
@@ -19,12 +21,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
     <style>
       :root {
+        color-scheme: dark;
         --bulma-family-primary: "Inter";
         --bulma-block-spacing: "1rem";
       }
       html,
       body {
-        background-color: #f9f9f9;
+        background-color: var(--bulma-scheme-main);
       }
       .content h2 {
         font-size: 1.35rem;
@@ -36,8 +39,8 @@
         color: inherit;
       }
       .notice-box {
-        border: 1px solid #e0e0e0;
-        border-left: 4px solid #3273dc;
+        border: 1px solid var(--bulma-border);
+        border-left: 4px solid var(--bulma-link);
       }
       @media (max-width: 768px) {
         .container {

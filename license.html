@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Force dark mode: opt out of OS/browser light-mode auto-switching -->
+    <meta name="color-scheme" content="dark" />
 
     <!-- Social media tags -->
     <meta property="og:title" content="Sekant Security : De-risk Web Browsing with Embedded Runtime Intelligence" />
@@ -47,6 +49,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
     <style>
       :root {
+        color-scheme: dark;
         --bulma-family-primary: "Inter";
         --bulma-block-spacing: "1rem";
       }
@@ -55,12 +58,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-      }
-      @media (max-width: 768px) {
-        .container {
-          padding-left: 1.25rem;
-          padding-right: 1.25rem;
-        }
       }
     </style>
 
